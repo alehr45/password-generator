@@ -6,7 +6,7 @@ User defines password length @ 8-128 characters.
 2. Choose to include or omit uppercase letters, lowercase letters, numbers and special chars.
 3. Password will generate 
 
-![Alt text](./screenshot.png?raw=true "Optional Title")
+
 
 
 https://alehr45.github.io/password-generator/
