@@ -53,3 +53,67 @@ function getRandomCharacter(characterType) {
       types.push(4)
     }
   }
+
+  function generatePassword() {
+
+    let pw = ""
+  
+    types = []
+  
+  
+    
+    lengthInput()
+    typeInput()
+  
+  
+    
+    for (var i = 0; i < (passwordLength - types.length); i++) {
+      switch (types[Math.floor(Math.random() * Math.floor(types.length))]) {
+        case 1:
+          pw = pw + getRandomCharacter(numbers);
+          break;
+        case 2:
+          pw = pw + getRandomCharacter(lowerCase);
+          break;
+        case 3:
+          pw = pw + getRandomCharacter(upperCase)
+          break;
+        case 4:
+          pw = pw + getRandomCharacter(spChars)
+          break;
+      }
+    }
+    
+    
+    for (var i = 0; i < types.length; i++) {
+      switch (types[i]) {
+        case 1:
+          pw = pw + getRandomCharacter(numbers);
+          break;
+        case 2:
+          pw = pw + getRandomCharacter(lowerCase);
+          break;
+        case 3:
+          pw = pw + getRandomCharacter(upperCase)
+          break;
+        case 4:
+          pw = pw + getRandomCharacter(spChars)
+          break;
+      }
+    }
+  
+    return pw;
+  }
+  
+ 
+  function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+  
+    passwordText.value = password
+  }
+  
+  generateBtn.addEventListener('click', writePassword)
+  
+  
+  
