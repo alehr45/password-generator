@@ -9,4 +9,4 @@ User defines password length @ 8-128 characters.
 
 ![Alt text](./screenshot.png?raw=true "Optional Title")
 
-https://alehr45.github.io/password-generator/
+https://alehr45.github.io/password-generator/.
